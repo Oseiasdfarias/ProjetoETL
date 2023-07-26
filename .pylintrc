@@ -3,7 +3,10 @@
 disable=
       C0114, # missing-module-docstring
       C0115, # missing-class-docstring
-      C0116 # missing-function-docstring
+      C0116, # missing-function-docstring
+      W0012, # eq-without-hash
+      R0022, # useless-option-valuE
+      E0015, # unrecognized-option
 
 # A comma-separated list of package or module names from where C extensions may
 # be loaded. Extensions are loading into the active Python interpreter and may
@@ -582,5 +585,5 @@ min-public-methods=0
 
 # Exceptions that will emit a warning when being caught. Defaults to
 # "BaseException, Exception".
-overgeneral-exceptions=BaseException,
-                       Exception
+overgeneral-exceptions=builtins.BaseException,
+                       builtins.Exception
