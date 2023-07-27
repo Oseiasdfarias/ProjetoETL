@@ -1,8 +1,9 @@
 from typing import List, Dict
 from bs4 import BeautifulSoup
+from .interfaces.html_collector import HtmlCollectorInterface
 
 
-class HtmlCollector:
+class HtmlCollector(HtmlCollectorInterface):
 
     @classmethod
     def collect_essential_information(cls, html: str) -> List[Dict[str, str]]:
@@ -15,8 +16,4 @@ class HtmlCollector:
         essential_information = [
             {"name": artist_name.contents[0],
              "link": links + artist_name.get("href")} for artist_name in artist_name_list_items]
-
-        assert isinstance(essential_information, list)
-        assert isinstance(essential_information[0], dict)
-        assert "name" in essential_information[0]
-        assert "link" in essential_information[0]
+        return essential_information

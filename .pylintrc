@@ -7,6 +7,9 @@ disable=
       W0012, # eq-without-hash
       R0022, # useless-option-valuE
       E0015, # unrecognized-option
+      C0202, # bad-classmethod-argument
+      W4905,
+      W0221, # arguments-differ
 
 # A comma-separated list of package or module names from where C extensions may
 # be loaded. Extensions are loading into the active Python interpreter and may
