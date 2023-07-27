@@ -2,7 +2,7 @@ from .http_requester import HttpRequester
 
 
 def test_request_from_page(requests_mock):
-    url = "https://web.archive.org/web/20121007172955/https://www.nga.gov/collection/anZ1.htm"
+    url = "https://web.archive.org/web/20121007172955/https://www.nga.gov/collection/anZ1.htm"   # noqa: E501
     response_context = "<h1>Olá Mundo</h1>"
     requests_mock.get(url, status_code=200, text=response_context)
 

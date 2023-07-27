@@ -15,5 +15,6 @@ class HtmlCollector(HtmlCollectorInterface):
         links = "https://web.archive.org"
         essential_information = [
             {"name": artist_name.contents[0],
-             "link": links + artist_name.get("href")} for artist_name in artist_name_list_items]
+             "link": links + artist_name.get("href")}
+            for artist_name in artist_name_list_items]
         return essential_information

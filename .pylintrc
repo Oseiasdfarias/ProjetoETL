@@ -10,6 +10,7 @@ disable=
       C0202, # bad-classmethod-argument
       W4905,
       W0221, # arguments-differ
+      E501,
 
 # A comma-separated list of package or module names from where C extensions may
 # be loaded. Extensions are loading into the active Python interpreter and may
