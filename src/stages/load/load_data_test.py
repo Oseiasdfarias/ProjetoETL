@@ -27,7 +27,7 @@ def test_load_error():
 
     try:
         load_data.load("Entrada com erro")
-        assert True is False  # pylint: disable=comparison-of-constants
+        assert True is False        # pylint: disable=comparison-of-constants
     except Exception as exception:  # pylint: disable=broad-except
         print(exception)
         assert isinstance(exception, LoadError)
